@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product Search</title>
+	<!-- Link to jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<meta name="google-site-verification" content="lbmLrJAKqpRvtO1foPmjKvpQIvNPCz9kUq_zn9KQljE" />
+
+	<!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<form id="get-city" onsubmit="return false">
+		<input id="product-name" type="text" placeholder="Item" required>
+		<input type="submit" id="product-search" value="Find Product">
+	</form>
+	<div id="out"></div>
+	<div id="product-info">
+	</div>
+	<br>
+	<input type="button" onclick="previous()" value="<<">
+	<input type="button" onclick="next()" value=">>">
+
+	<div id="player"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/hmac-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/sha256-min.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
